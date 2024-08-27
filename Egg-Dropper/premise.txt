@@ -1,0 +1,4 @@
+You have 2 eggs and need to determine the highest floor, 
+designated f, in a skyscraper with n floors, from which an egg can be dropped without breaking. If an egg breaks at a certain floor, it will break from any higher floor, and you can't use that egg again.
+To find f, you could drop an egg from each floor sequentially until it breaks, but that's inefficient. The goal is to minimize the number of drops needed to identify floor f.
+The function egg_drop(n) should return the minimum number of drops required to determine f in a building with n floors, not the floor number itself. For example, with 2 floors (egg_drop(2)), you'd need at least 2 drops to be sure of f
