@@ -1,0 +1,26 @@
+In order to solve this challenge we need to use a recursive function.
+We add numbers sequentially e.g. 1+2+3+4+5+... etc until our total exceeds the number of floors.
+The number which causes the total to meet or exceed the number of floors is our solution and is returned by the function.
+
+What we are looking for is essentially the lowest number of drops in the absolute worst case scenario
+
+For a 100 floor building we would drop our first egg on floor 14.
+If the egg breaks then we return to floor 1 and drop our second egg on every floor up sequentially, 
+as floor f is guaranteed to be between 1 and 14 we will find our solution within 14 drops.
+
+If the egg does not break on floor 14 then we move up 13 floors, to floor 27,
+if the egg breaks, we return to floor 15 and work our way up sequentially,
+floor f is guaranteed to be be between 14 and 27.
+We will have performed 2 drops (floors 14 and 27) with a further maximum of 12 drops, 
+giving us a maximum total of 14 drops again.
+
+This pattern continues where if the egg does not break, you continue up the tower
+one less floors than the previous iteration, guaranteeing you never exceed 14 drops (for a tower of 100 floors)
+
+This rule holds true for a tower of any size:
+Tower Size - Drops
+36 - 8
+100 - 14
+600 - 35
+100000 - 447
+1234567 - 1571
