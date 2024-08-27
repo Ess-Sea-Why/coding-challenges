@@ -1,1 +1,1 @@
-This repository will contain my solutions to coding challenges and thought exercises
+This repository contains my solutions to coding challenges and thought exercises which I have encountered during my studies.
