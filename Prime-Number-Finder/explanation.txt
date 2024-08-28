@@ -1,0 +1,21 @@
+The first step in the solution to this challenge is creating an empty list to hold the prime factors.
+This is given the name "prime_list".
+
+We then use a for loop to cycle through all the numbers in the range from 1 to our number n.
+Since the upper limit of the range is non-inclusive we use n+1 as our upper limit.
+The number within the for loop is designated "num"
+
+Within our first for loop we create the empty list "factor_list",
+this is reinitialised for every iteration of this loop to be empty.
+We also have another for loop which is used to determine whether the num is a prime number.
+In order to achieve this the for loop checks all positive whole numbers below our current num,
+the number is designated "factor" within the loop
+if num % factor == 0 then we know that we have found a factor,
+that factor is then appended to our "factor_list"
+
+Once we exit the second for loop, there is an if statement which checks the current length
+of the "factor_list", prime numbers only have two factors, 1 and the number itself,
+therefore if len(factor_list) == 2 then we know that num is a prime, at which point we
+can append it to our "prime_list"
+
+After our first for loop has concluded we return the prime_list as our output.
