@@ -1,5 +1,5 @@
 There are a few ways of takling this challenge, I selected the one which I already
-have half the solution to. In a previous challenge I created a prime_finder() function,
+had half the solution to. In a previous challenge I created a prime_finder() function,
 this function accepts a single integer as an argument (designated "n") and returns a list of all the prime
 numbers between 1 and n.
 
