@@ -1,0 +1,18 @@
+There are a few ways of takling this challenge, I selected the one which I already
+have half the solution to. In a previous challenge I created a prime_finder() function,
+this function accepts a single integer as an argument (designated "n") and returns a list of all the prime
+numbers between 1 and n.
+
+for a more detailed explanation on how this works check out my Prime-Number-Finder folder of the repository.
+
+Since a numbers factors cannot be greater than itself, all the factors of a number and therefore all the prime factors
+must be in the range of 1-n, so to start off I ported the aforementioned prime_finder() function in.
+This gives us the list of all the primes in our target range.
+
+From there it is a case of going through each prime and determining whether it is a factor of our argument, n
+to do this we use a for loop with a nested if statment which checks the validity of the statment:
+n % prime == 0
+if this evaluates to true, then the current prime value is appended to our prime factors list.
+
+Finally once we have the list of n's prime factors, we can use the sum() function to give a total,
+which is subsequently returned as the output.

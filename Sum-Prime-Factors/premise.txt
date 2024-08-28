@@ -1,0 +1,2 @@
+This challenge asks you to create a sum_of_prime_factors() function that accepts
+an integer "n" and returns the sum of all its prime factors.
